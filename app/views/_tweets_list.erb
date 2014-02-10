@@ -1,0 +1,7 @@
+<ul>
+  <% @user.tweets.order(sent_at: :desc).each do |tweet| %>
+  <li>
+    <%=tweet.text%> - <%=tweet.sent_at.to_date%>
+  </li>
+  <% end %>
+</ul>

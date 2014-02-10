@@ -7,3 +7,8 @@
 th {
   text-align: left;
 }
+
+#loader{
+  margin: 0 auto;
+  text-align: center;
+}
