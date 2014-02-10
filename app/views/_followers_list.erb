@@ -1,0 +1,8 @@
+<ul>
+  <% @user.followers.each do |follower| %>
+  <li>
+    <a href="/<%=follower.username%>"><%=follower.username%></a>
+    Tweet Count: <%=follower.tweet_count %>
+  </li>
+  <% end %>
+</ul>

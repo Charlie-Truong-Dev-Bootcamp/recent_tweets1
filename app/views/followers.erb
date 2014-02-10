@@ -1,12 +1,11 @@
 <div class="container">
-  <h1><%=@user.username%>'s Tweets</h1>
-  <h3><a href="/<%=@user.username%>/followers">View Followers</a></h3>
+  <h1><%=@user.username%>'s Followers</h1>
   <% if @updating == false %>
-    <%= erb :_tweets_list %>
+    <%= erb :_followers_list %>
   <% else %>
     <div id="loader" data-username="<%=@user.username%>"><img alt="loading_img" src="/img/ajax-loader.gif"/></div>
   <% end %>
 </div>
 
-<script src="/js/tweets.js"></script>
+<script src="/js/followers.js"></script>
 
